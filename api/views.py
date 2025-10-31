@@ -32,3 +32,4 @@ def register(request):
 
     user = User.objects.create_user(username=username, password=password, email=email)
     return Response({"message": "User registered"}, status=201)
+#
