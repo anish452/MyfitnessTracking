@@ -6,7 +6,7 @@ router = DefaultRouter()
 router.register('activities', ActivityViewSet, basename='activity')
 
 urlpatterns = [
-    path('auth/register/', register),
+    path('auth/register/', register, name='register'),
 ]
 
 urlpatterns += router.urls
